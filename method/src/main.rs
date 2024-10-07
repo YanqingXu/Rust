@@ -10,6 +10,13 @@ impl Rectangle {
     }
 }
 
+impl Rectangle {
+    #[allow(dead_code)]
+    fn perimeter(&self) -> u32 {
+        2 * (self.width + self.height)
+    }
+}
+
 fn main() {
     let rect1 = Rectangle { width: 30, height: 50 };
 
